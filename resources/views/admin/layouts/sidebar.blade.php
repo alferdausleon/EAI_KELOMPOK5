@@ -40,8 +40,10 @@ $admin = \App\Libraries\Enumerations\UserTypes::$ADMIN;
                       </ul>
                  </li>
                     @endif
+
                  <li>
                       <a><i class="fa fa-columns"></i> Course <span class="fa fa-chevron-down"></span></a>
+                      
                       <ul class="nav child_menu">
                       @if($user_type == $teacher || $user_type == $admin)
                       <li class="{{Route::currentRouteName()=='courses-list' ? 'active' : ''}}"><a href="{{Route('courses-list')}}"><i class="fa fa-list-alt"></i> Courses </a></li>
@@ -88,6 +90,9 @@ $admin = \App\Libraries\Enumerations\UserTypes::$ADMIN;
                     </ul>
                 </li>
                     @endif
+                <li>
+                    <a href="/ekskul"><i class="fa fa-hospital-o"></i> Ekstrakurikuler </span></a>
+                </li>
 
                 </ul>
               </div>
